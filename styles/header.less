@@ -1,0 +1,56 @@
+.navbar {
+    border-radius: 0px;
+    border-bottom: 5px solid @red;
+    @media (min-width: 769px){
+        .navbar-brand{
+            display: none !important;
+        }
+    	background-image: url("../img/banner.jpg");
+    	background-size: cover;
+    	background-position: center;
+    	.container{
+    		padding-top: 30px;
+            .logo{
+                background-image: url("../img/logowit.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 200px;
+                width: 300px;
+                margin: -70px auto 10px auto;
+                &:hover{
+                    background-image: url("../img/logorood.svg");
+                }
+            }
+    	}
+    }
+}
+
+.navbar-inverse .navbar-nav{
+	&>li>a{
+		color:white;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 14pt;
+		text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.5);
+		text-decoration: none;
+	}
+	.active > a, .active > a:hover{
+		background-color: transparent;
+	}
+	li>a:hover{
+		color: @red;
+	}
+    li > a:focus {
+        color: #ffffff;
+    }
+}
+.navbar-inverse .navbar-nav > .active > a:focus{
+    background: none;
+    border: none !important;
+}
+.navbar .nav > .active > a {
+    text-decoration: underline;
+    &:hover{
+        color: @red;
+    }
+}
