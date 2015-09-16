@@ -2,10 +2,10 @@
   "name": "IJzersterk",
   "version": "2.0.2",
   "description": "The frontend of DSKV IJzersterk website",
-  "main": "app.js",
+  "main": "scripts/app.jsx",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielcolon/ijzersterk"
+    "url": "https://github.com/Ijzersterk/frontend"
   },
   "keywords": [
     "ijzersterk",
@@ -15,7 +15,7 @@
   "author": "DSKV IJzersterk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danielcolon/ijzersterk/issues"
+    "url": "https://github.com/Ijzersterk/frontend/issues"
   },
   "homepage": "http://www.ijzersterkdelft.nl",
   "dependencies": {
