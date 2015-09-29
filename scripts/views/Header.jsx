@@ -11,7 +11,7 @@ export default React.createClass({
                     <Nav navbar>
                         <NavItemLink to="/" eventKey={1}>Home</NavItemLink>
                         <NavItemLink to="blogs" eventKey={2}>Blogs</NavItemLink>
-                        <NavItemLink to="agenda" eventKey={3}>Agenda</NavItemLink>
+                        <NavItemLink to="gym" eventKey={3}>The gym</NavItemLink>
                     </Nav>
                     <Nav navbar right>
                         <NavItemLink to="newmember" eventKey={1}>New member</NavItemLink>

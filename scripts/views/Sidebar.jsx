@@ -20,7 +20,9 @@ default React.createClass({
                 <h4>Blogs</h4>
                 <ul>
                     <li>
-                        <Link to="/blogs#first-meet-joey">My first powerlifting meet - by Joey</Link>
+                        <Link to="/blogs#first-meet-joey">
+                            My first powerlifting meet - by Joey
+                        </Link>
                     </li>
                     <li>
                         <Link to="/blogs#ego-lifting">
@@ -30,8 +32,8 @@ default React.createClass({
                 </ul>
             </div>
             <div className="block">
-                <h4>Agenda</h4>
-                <span className="soon">Coming soon</span>
+                <h4>Events</h4>
+                <span className="soon">No upcomming events</span>
             </div>
         </div>);
     }

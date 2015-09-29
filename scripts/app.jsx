@@ -11,6 +11,7 @@ import Blogs from './views/Blogs.jsx';
 import Newmember from './views/Newmember.jsx';
 import About from './views/About.jsx';
 import Login from './components/Login.jsx';
+import Gym from './views/Gym.jsx';
 
 var {
     Route, RouteHandler, DefaultRoute, NotFoundRoute
@@ -32,12 +33,6 @@ var App = React.createClass({
     }
 });
 
-var UnderConstruction = React.createClass({
-    render() {
-        return <h1>UNDER CONSTRUCTION</h1>;
-    }
-});
-
 // Defines the routes within the website.
 // So going to domain.com/#/home will load the Home component.
 var routes = (
@@ -45,7 +40,7 @@ var routes = (
         <DefaultRoute name="home" handler={Home}/>
         <NotFoundRoute handler={Home}/>
         <Route name="blogs" handler={Blogs}/>
-        <Route name="agenda" handler={UnderConstruction}/>
+        <Route name="gym" handler={Gym}/>
         <Route name="newmember" handler={Newmember}/>
         <Route name="about" handler={About}/>
         <Route name="admin" handler={Login}/>
