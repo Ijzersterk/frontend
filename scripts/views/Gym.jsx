@@ -20,7 +20,7 @@ export default React.createClass({
                 </div>
 
             </div>
-            <p>On the ground floor of the gym there different types of weight and exercise machines. For the exercise machines there are bicycles, cross trainers, stairmaster and rowing machings.</p>
+            <p>On the ground floor of the gym there are different types of weight- and exercise machines. For the exercise machines: there are bicycles, cross trainers, stairmaster and rowing machings.</p>
             <p>The first floor exists solely of power equipment, below you can find a list of all the materials which are present. On the balcony on the first floor, there is room for stretching and ab exercises.</p>
 
             <p>There are no bumperplates nor are there any platforms.</p>
@@ -48,13 +48,21 @@ export default React.createClass({
             <h3>VKR</h3>
             <p>The VKR constists of two small rooms. The following are present:</p>
             <ul>
-                <li>2x Lat pulldown</li>
-                <li>1 Deadlift platform</li>
-                <li>2x Squat racks</li>
-                <li>2x Eleiko barbells</li>
-                <li>2x Regular 20kg barbells</li>
-                <li>1x Roman chair</li>
-                <li>1x Supported row station</li>
+                <li>2x Bench pulls</li>
+                <li>2x Flat benches</li>
+                <li>2x Adjustable benches</li>
+                <li>1x Cable row</li>
+                <li>1x Pulley</li>
+                <li>1x Adjustable pulley Air Pressure</li>
+                <li>1x Back extension</li>
+                <li>1x Ergometer</li>
+                <li>2x Legpress(1x raw, 1x machine)</li>
+                <li>5x 20kg bar (2 of them are Eleiko)</li>
+                <li>2x 12kg bars</li>
+                <li>2x Sets of Eleiko plates</li>
+                <li>Sufficient amount of rounded plates</li>
+                <li>Dumbells till 34 kg</li>
+                <li>Kettlebels</li>
             </ul>
         </div>;
     }
