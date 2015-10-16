@@ -20,6 +20,11 @@ default React.createClass({
                 <h4>Blogs</h4>
                 <ul>
                     <li>
+                        <Link to="/blogs#blog-programming">
+                            Programming - by Daniël Schooneveld
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/blogs#first-meet-joey">
                             My first powerlifting meet - by Joey
                         </Link>

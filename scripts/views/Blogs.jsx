@@ -5,6 +5,89 @@ default React.createClass({
     render() {
         return (
             <div className="col-md-8 col-md-offset-2 col-xs-12">
+                <div id="blog-programming" className="article">
+                    <h1>Programming</h1>
+                    <div className="date">October 16, 2015 | <span className="name">Daniël</span> | 10 min read</div>
+                    <p>I hear the “What is the best program?” question a lot. As simple as it might sound it is quite complex to answer.  There isn’t just a best program for everyone, it depends on your goals and your experience with strength training.  Everybody is different, but the same principles of training apply to everyone. In this blog I will try to give you some back ground information on those principles of strength training , in particular powerlifting,  and an overview of some of the best programs out there.</p>
+
+                    <h4>Basics of strength programs</h4>
+
+                    <p><b>Specificity</b></p>
+
+                    <p>If you want to get better at something, do it a lot. This simple rule applies to almost everything from playing piano, to math and also to physical exercise. This especially applies to the sports of powerlifting and weightlifting, where the sport is centered around respectively 3 or 2 lifts. What you lift on the squat is what counts, at a powerlifting meet no one cares how much you leg press. So if you want to get better at squatting you have to squat, it is as simple as that. Doing leg press, leg curls or lunges might help develop your leg muscles and give you stronger legs, but it will not necessarily get you a stronger squat. So specificity is an important aspect of any program. This doesn’t mean there is no place for other exercises as leg curls or lunges, they can be useful in your program as accessory work.</p>
+
+                    <p><b>Adaptation</b></p>
+
+                    <p>So you start bench pressing, the first time bench pressing might feel very shaky and the bar goes in every direction instead of up. But as soon after you have pressed for a few workouts you start to feel more comfortable and familiar with the lift and you start getting stronger. By bench pressing you put your body under stress and your body reacts. Your body recovers and you put your body under stress again, and so forth. Cycle by cycle of benching and recovery, your body adapts and gets a little stronger. In this period of super compensation you get stronger. This is very simply put how adaption works and why you get stronger from strength training.</p>
+
+                    <p><b>Volume</b></p>
+
+                    <p>People often have the false preoccupation that powerlifters train very heavy and in low reps. This is not fully true, for strength trainings it’s not only important how heavy you train, it is also very important to make volume on your lifts. Volume is the amount of sets times reps times weight being lifted. For instance you bench press 60kg for 5 sets of 5 reps, this means your volume is 60 x 5 x 5= 1500kg.  Doing those reps and sets is what helps you get better in those motor patterns. As we said in the paragraph about specificity, if you want to get better at something, do it a lot, so do a lot of volume. Generally speaking the best rep range for building strength is around 2-8 reps. There are other benefits to doing a lot of volume such as working on your form and muscle hypertrophy. A guideline often used for the amount of volume is Prelipins table.</p>
+
+                    <p>But apart from our main lifts you often see accessory work in programs. Accessory exercises are less taxing on your body and are a great way to get some more volume in, while not interfering too much with your recovery for the next training.</p>
+
+                    <p><b>Intensity</b></p>
+
+                    <p>In some programs you will encounter percentages. Those percentages represent which percentage of your one rep max you should be training, the term for this is intensity. Intensity has nothing to do with how intense your set is, doing more reps with a lower weight, lower intensity, might be just as intense and exhausting if not more. Going very high in intensity is very taxing on your body and you will see that powerlifters usually stay within the 60-90% intensity range during their training. One of our previous blogs already mentioned ego lifting, going heavy and showing off.  You very rarely go to your max in training. Again, volume over intensity. Powerlifting is about building strength, not testing strength. In this aspect powerlifting differentiates radically from sports such as CrossFit.</p>
+
+                    <p><b>Frequency</b></p>
+
+                    <p>Traditionally people who go the gym train every muscle group once a week. Recent studies have shown that this is a sub-optimal approach to training and people who trained with higher frequency made substantially more gains. So you do not only have to practice things with a lot of volume, you have to practice them often. You will see that you will be squatting and (bench)pressing at least twice a week in any program.</p>
+
+                    <p><b>Recovery</b></p>
+
+                    <p>But there is also something as doing too much. You can get carried away in training too heavy and wanting to do too much in order to progress faster. But doing too much will even hinder your progress. Leave your ego at the door and stay rational, your body has to be able to recover from your training. Planning the recovery and adaption and therefor the frequency and volume is one of the most important aspects of a training program. Factors as sleep and nutrition will also greatly affect your recovery.</p>
+
+                    <h4>Progression</h4>
+
+                    <p>When I was talking with someone about my programming (what else is there to talk about than powerlifting?) he frowned when I said I planned progression, he argued you cannot plan progression since you cannot look into the future. He was right that I cannot know that I will deadlift 50kg's more by the end of this year. But what I can do I is to plan to increase my deadlift working sets with 5kg every week. At some point my body will alert me that I have to do a de-load, starting at a lighter weight again, and start building it back up again, that might be after 10kg's or 50kg's I don’t know that yet. But it’s vital to have some sort of progression in your training. Because if you keep doing what you have done, you will get what you have always had. You won’t make any progress. You have to keep pushing your body, also known as progressively overload, in order to keep making progress. Getting stronger is a result of progressive overloading. Increasing your work sets as a result of you getting stronger is the wrong way around, your body is lazy and doesn’t want to progress on itself. As an example people often refer to the Greek mythology. A Greek wrestler Milo wanted to get stronger for the Olympics and takes a new born calf on his back and walks around with it all day. As the calf gets bigger and grows into a cow he becomes progressively stronger over time as the load he walks around with all day also increases.</p>
+
+                    <p>Most programs are very different in the way progression is planned. This depends largely on how fast you are able to progress. In the last bit of this blog we will answer this question: what program is best for you? Luckily there have been a lot of people with experience in strength training who have made good routines. I hope to have given you a good overview of the principles of programming for you to evaluate which training fits you.</p>
+
+                    <h4>So are you a ...?</h4>
+
+                    <p><b>Beginner</b></p>
+
+                    <p>Beginners are not only people who are new to the gym, but also people who are new to barbell exercises or this kind of training approach, for instance those who have done regular fitness.  Since strength training is new for you, you will adapt quickly. Beginners make very fast progress and are able to increase their workload every new training.</p>
+
+                    <p>Beginner programs are very simple in their set up. Training is focused on the basic compound exercises, squat, deadlift, overhead- and bench-press. Every training you do 5 work sets of 5 reps. By starting off with an empty barbell you can first focus on your form before the load gets heavy.  If you complete your last training successfully the next training you do 2.5kg more.</p>
+
+                    <p>The three most proven beginners programs are:</p>
+                    <ul>
+                        <li>Stronglifts 5x5</li>
+                        <li>Starting Strength</li>
+                        <li>ICF (Ice cream fitness) 5x5</li>
+                    </ul>
+
+                    <p><b>Intermediate</b></p>
+
+                    <p>As a beginner you make very fast progress. But as time progresses your progress will start to slow down. You might start to stall on your beginner program and have to do a few of those de-loads. I have seen people trying to squeeze out every kg out of their beginner program but by doing so they keep on stalling, because the program doesn’t fit them anymore. Then it is time to move on to a more advanced program.</p>
+
+                    <p>Where most beginner programs make use of progression every training, most advanced programs make use of weekly progression. The advanced programs are more complex than beginner programs introducing lighter or heavier days. Focus of the program stays on compound exercises, but some accessory exercises or variations of the main lift are added.</p>
+
+                    <p>The most frequently used intermediate programs are:</p>
+                    <ul>
+                        <li>Texas Method</li>
+                        <li>MADCOW</li>
+                        <li>Candito’s Linear and 6 week program</li>
+                    </ul>
+                    <p><b>Advanced</b></p>
+
+                    <p>But after some time you will notice that your intermediate program doesn’t suit you anymore, progress slows down. Now that you are a lot stronger progress will be harder to come by. You will have to do more, get your volume up and there is a need for even more complexity in your program. </p>
+
+                    <p>Advanced programs are set up very differently from beginner and advanced programs. Most programs make use of a monthly cycle, something called periodization. There are a lot of different advanced programs out there, which can be very different in set up. By this time you have been lifting for a longer time and I hope you have done your own research too and have got to know your body, so I hope you can make a good choice out of the dozens of programs.</p>
+
+                    <p>The most well-known advanced program is:</p>
+                    <ul>
+                        <li>Sheiko (3 and 4 day routine made by the Russian powerlifting coach Boris Sheiko, those programs are often just referred to as Sheiko)</li>
+                    </ul>
+
+                    <p>There are dozens if not hunderds other advanced programs out there. Some of which might work just as good as Sheiko.  Many advanced lifters also build their own program, either out of elements from different programs are build it from the ground up. But doing so requires enough knowledge and experience with training.</p>
+
+                    <p><b>For further mentioning</b></p>
+
+                    <p>As some of you might have noticed I did not fit the popular Wendler 5/3/1 program into one of the categories. Officially speaking, Wendler is an advanced program, but there are a lot of better choices for advanced programs out there. Jim Wendler designed this program when he moved away from the powerlifting sport and wanted to focus on other things. So for powerlifting purposes this program is not good. However for people who train in the gym for a different sport where strength is important, for example rugby, Wendler programming is good. Wendler is (in principle) not very taxing, has short trainings and allows for flexible scheduling while still getting you stronger.</p>
+                </div>
                 <div id="first-meet-joey" className="article">
                     <h1>My first powerlifting meet</h1>
                     <div className="date">September 16, 2015 | <span className="name">Joey</span> | 5 min read</div>
