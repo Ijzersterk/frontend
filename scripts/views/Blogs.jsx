@@ -7,17 +7,12 @@ default React.createClass({
             <div className="col-md-8 col-md-offset-2 col-xs-12">
                 <div id="blog-programming" className="article">
                     <h1>Programming</h1>
-                    <div className="date">October 16, 2015 | <span className="name">Daniël</span> | 10 min read</div>
+                    <div className="date">October 16, 2015 | <span className="name">Daniël Schooneveld</span> | 10 min read</div>
                     <p>I hear the “What is the best program?” question a lot. As simple as it might sound it is quite complex to answer.  There isn’t just a best program for everyone, it depends on your goals and your experience with strength training.  Everybody is different, but the same principles of training apply to everyone. In this blog I will try to give you some back ground information on those principles of strength training , in particular powerlifting,  and an overview of some of the best programs out there.</p>
-
                     <h4>Basics of strength programs</h4>
-
                     <p><b>Specificity</b></p>
-
                     <p>If you want to get better at something, do it a lot. This simple rule applies to almost everything from playing piano, to math and also to physical exercise. This especially applies to the sports of powerlifting and weightlifting, where the sport is centered around respectively 3 or 2 lifts. What you lift on the squat is what counts, at a powerlifting meet no one cares how much you leg press. So if you want to get better at squatting you have to squat, it is as simple as that. Doing leg press, leg curls or lunges might help develop your leg muscles and give you stronger legs, but it will not necessarily get you a stronger squat. So specificity is an important aspect of any program. This doesn’t mean there is no place for other exercises as leg curls or lunges, they can be useful in your program as accessory work.</p>
-
                     <p><b>Adaptation</b></p>
-
                     <p>So you start bench pressing, the first time bench pressing might feel very shaky and the bar goes in every direction instead of up. But as soon after you have pressed for a few workouts you start to feel more comfortable and familiar with the lift and you start getting stronger. By bench pressing you put your body under stress and your body reacts. Your body recovers and you put your body under stress again, and so forth. Cycle by cycle of benching and recovery, your body adapts and gets a little stronger. In this period of super compensation you get stronger. This is very simply put how adaption works and why you get stronger from strength training.</p>
 
                     <p><b>Volume</b></p>
