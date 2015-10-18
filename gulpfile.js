@@ -58,6 +58,7 @@ var config = {
     bundle: 'app.js',
     distJs: 'dist/js',
     distCss: 'dist/css',
+    distFonts: 'dist/fonts',
     distHtml: 'dist',
     distImg: 'dist/img',
     npmDir: './node_modules'
@@ -108,6 +109,11 @@ gulp.task('browserify', function() {
         .pipe(source(config.bundle))
         .pipe(buffer())
         .pipe(gulp.dest(config.distJs));
+});
+
+gulp.task('fonts', function(){
+    return gulp.src(config.npmDir + '/bootstrap/fonts/**')
+        .pipe(gulp.dest(config.distFonts));
 });
 
 // Parses and process the style files (from less to css)
@@ -166,19 +172,19 @@ gulp.task('watchTask', function() {
 // The watch task.
 // Copies the html/img files, watches for changes and sets up the automatic building of jsx files
 gulp.task('watch', ['clean'], function() {
-    gulp.start(['browserSync', 'watchTask', 'watchify', 'html-copy', 'styles', 'lint', 'image']);
+    gulp.start(['browserSync', 'watchTask', 'watchify', 'html-copy', 'styles', 'lint', 'image', 'fonts']);
 });
 
 // Creates a dist directory which can be run indepedant
 gulp.task('build', ['clean'], function() {
     process.env.NODE_ENV = 'production';
-    gulp.start('browserify', 'styles', 'html-copy', 'image');
+    gulp.start('browserify', 'styles', 'html-copy', 'image', 'fonts');
 });
 
 // Creates a zip file which is deployable
 gulp.task('deploy', function(cb){
     process.env.NODE_ENV = 'production';
-    runSequence('clean', ['browserify', 'styles', 'html-copy', 'image'], 'zip', 'clean', cb);
+    runSequence('clean', ['browserify', 'styles', 'html-copy', 'image', 'fonts'], 'zip', 'clean', cb);
 })
 
 gulp.task('default', function() {

@@ -1,7 +1,33 @@
 import React from 'react';
+import Slider from 'react-slick';
 
-export default React.createClass({
-    render(){
+export
+default React.createClass({
+    renderCarouselItem(index){
+        const imgName = `vkr_0${index}`;
+        return <div><img key={imgName} alt={imgName} src={'img/vkr/' + imgName + '.jpg'}/></div>;
+    },
+    renderCarousel() {
+        var settings = {
+            className: 'center',
+            centerMode: true,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            arrows: true,
+                  centerPadding: '60px',
+            adaptiveHeight: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoPlay: true
+        };
+        var items = [];
+        for (var i = 0; i < 10; i++){
+            items.push(this.renderCarouselItem(i));
+        }
+        return (<Slider {...settings}>{items}</Slider>);
+    },
+    render() {
         return <div className="col-md-8 col-md-offset-2 col-xs-12">
             <h1>The gym</h1>
             <p>DSKV IJzersterks works out in two places at the Sport and Culture unit of Delft.
@@ -46,6 +72,9 @@ export default React.createClass({
                 <li>1x Dubbel pulley</li>
             </ul>
             <h3>VKR</h3>
+            <div className="row">
+                {this.renderCarousel()}
+            </div>
             <p>The VKR constists of two small rooms. The following are present:</p>
             <ul>
                 <li>2x Bench pulls</li>
