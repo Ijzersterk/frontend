@@ -6,7 +6,7 @@ default React.createClass({
         return (<footer className="footer">
                     <div className="container">
                         <p className="pull-left">
-                            <i className="fa fa-copyright"></i> 2015 - DSVK IJzersterk<br/>Eat well, train hard, sleep like a baby, make gainz like Arnold
+                            <i className="fa fa-copyright"></i> 2015 - DSVK IJzersterk<br/>Raising the bar
                         </p>
                         <p className="pull-right non-mobile-float">
                             Find us on <a href="https://www.facebook.com/ijzersterkdelft"><i className="fa fa-facebook-official"></i></a><br/>
