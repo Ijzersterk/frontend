@@ -1,6 +1,6 @@
 {
   "name": "IJzersterk",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "The frontend of DSKV IJzersterk website",
   "main": "scripts/app.jsx",
   "repository": {
