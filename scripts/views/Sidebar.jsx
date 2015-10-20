@@ -38,7 +38,7 @@ default React.createClass({
             </div>
             <div className="block">
                 <h4>Events</h4>
-                <span className="soon">No upcomming events</span>
+                <span className="soon">No upcoming events</span>
             </div>
         </div>);
     }
