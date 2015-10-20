@@ -18,8 +18,14 @@
     font-size: 45px;
 }
 
-.slick-slide img{
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 400px;
+.slick-slide {
+    // Kind of hack, for some reason the adaptive height of react-slick does not work properly
+    // It will only change the height on a mouse click anywhere in the container of where react-slick
+    // is initialized.
+    min-height: 400px;
+    img{
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 400px;
+    }
 }

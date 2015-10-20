@@ -15,11 +15,11 @@ default React.createClass({
             infinite: true,
             speed: 500,
             arrows: true,
-                  centerPadding: '60px',
             adaptiveHeight: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoPlay: true
+            autoPlay: true,
+            initialSlide: 2
         };
         var items = [];
         for (var i = 0; i < 10; i++){
