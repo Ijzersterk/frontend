@@ -24,7 +24,11 @@ default React.createClass({
                     <p><b>Intensity</b></p>
 
                     <p>In some programs you will encounter percentages. Those percentages represent which percentage of your one rep max you should be training, the term for this is intensity. Intensity has nothing to do with how intense your set is, doing more reps with a lower weight, lower intensity, might be just as intense and exhausting if not more. Going very high in intensity is very taxing on your body and you will see that powerlifters usually stay within the 60-90% intensity range during their training. One of our previous blogs already mentioned ego lifting, going heavy and showing off.  You very rarely go to your max in training. Again, volume over intensity. Powerlifting is about building strength, not testing strength. In this aspect powerlifting differentiates radically from sports such as CrossFit.</p>
-
+                    <div className="col-xs-12">
+                        <div className="col-xs-11 thumbnail">
+                            <img src="img/programming/number_of_reps.jpg"/>
+                        </div>
+                    </div>
                     <p><b>Frequency</b></p>
 
                     <p>Traditionally people who go the gym train every muscle group once a week. Recent studies have shown that this is a sub-optimal approach to training and people who trained with higher frequency made substantially more gains. So you do not only have to practice things with a lot of volume, you have to practice them often. You will see that you will be squatting and (bench)pressing at least twice a week in any program.</p>
@@ -32,7 +36,11 @@ default React.createClass({
                     <p><b>Recovery</b></p>
 
                     <p>But there is also something as doing too much. You can get carried away in training too heavy and wanting to do too much in order to progress faster. But doing too much will even hinder your progress. Leave your ego at the door and stay rational, your body has to be able to recover from your training. Planning the recovery and adaption and therefor the frequency and volume is one of the most important aspects of a training program. Factors as sleep and nutrition will also greatly affect your recovery.</p>
-
+                    <div className="col-xs-12">
+                        <div className="col-xs-11 thumbnail">
+                            <img src="img/programming/adaption_and_recovery.jpg"/>
+                        </div>
+                    </div>
                     <h4>Progression</h4>
 
                     <p>When I was talking with someone about my programming (what else is there to talk about than powerlifting?) he frowned when I said I planned progression, he argued you cannot plan progression since you cannot look into the future. He was right that I cannot know that I will deadlift 50kg's more by the end of this year. But what I can do I is to plan to increase my deadlift working sets with 5kg every week. At some point my body will alert me that I have to do a de-load, starting at a lighter weight again, and start building it back up again, that might be after 10kg's or 50kg's I don’t know that yet. But it’s vital to have some sort of progression in your training. Because if you keep doing what you have done, you will get what you have always had. You won’t make any progress. You have to keep pushing your body, also known as progressively overload, in order to keep making progress. Getting stronger is a result of progressive overloading. Increasing your work sets as a result of you getting stronger is the wrong way around, your body is lazy and doesn’t want to progress on itself. As an example people often refer to the Greek mythology. A Greek wrestler Milo wanted to get stronger for the Olympics and takes a new born calf on his back and walks around with it all day. As the calf gets bigger and grows into a cow he becomes progressively stronger over time as the load he walks around with all day also increases.</p>
@@ -69,7 +77,11 @@ default React.createClass({
                     <p><b>Advanced</b></p>
 
                     <p>But after some time you will notice that your intermediate program doesn’t suit you anymore, progress slows down. Now that you are a lot stronger progress will be harder to come by. You will have to do more, get your volume up and there is a need for even more complexity in your program. </p>
-
+                    <div className="col-xs-12">
+                        <div className="col-xs-11 thumbnail">
+                            <img src="img/programming/complexicty.jpg"/>
+                        </div>
+                    </div>
                     <p>Advanced programs are set up very differently from beginner and advanced programs. Most programs make use of a monthly cycle, something called periodization. There are a lot of different advanced programs out there, which can be very different in set up. By this time you have been lifting for a longer time and I hope you have done your own research too and have got to know your body, so I hope you can make a good choice out of the dozens of programs.</p>
 
                     <p>The most well-known advanced program is:</p>
