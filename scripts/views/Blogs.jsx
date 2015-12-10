@@ -5,6 +5,151 @@ default React.createClass({
     render() {
         return (
             <div className="col-md-8 col-md-offset-2 col-xs-12">
+                <div id="blog-gear" className="article">
+                    <h1>Lifting gear</h1>
+                    <div className="date">December 11, 2015 | <span className="name">Auke Piers</span> | 10 min read</div>
+                    <p>When you’re in the gym you
+                        see a lot of people using all kinds of lifting gear. You may have wondered what
+                        the purpose is of this perhaps odd looking gear is and whether you should use
+                        them yourself. This blog will explain different kinds of lifting gear and how
+                        to use them correctly. </p>
+
+                        <h4>Straps</h4>
+                        <p>Straps are used to get maximal grip. They are great for volume training, when you don’t want your grip
+                        to limit the amount of reps you can do. Also when you really want train your
+                        deadlift muscles, like hamstrings, lower back and lats,
+                        with a higher rep range or more volume, straps are your friend. With straps on
+                        you don’t have to worry about your grip strength and can train your other
+                        muscles to failure. Also if grip was limiting you, with straps you can focus
+                        more on maintaining good form throughout the lift. Finally, if you think your grip
+                        strength is a lacking area, you can always train grip strength separately. </p>
+
+                        <h4>How to use straps</h4>
+                        <p>When you put on your straps you want
+                        the end of the strap to fall into the palm of your hand, see figure 1. You
+                        strap yourself to the bar, by winding the strap around the bar. You start at
+                        the outer side of your hand on the bar, then you do a couple of windings
+                        inwards and finally rotate the bar to get tight, see figure 2.</p>
+                        <p>You can also use straps
+                        for accessory pulling exercises. When your training volume is very high there
+                        always is a risk of getting tendonitis by all the tension in your elbows, by
+                        using straps you can afford to do more volume with a smaller chance of getting
+                        tendonitis. For hypertrophy it is also useful, with the use of straps you can
+                        get a better mind-muscle connection with the specific muscle you’re training. </p>
+                        <p>Straps are only allowed in certain events during strongmen competitions. </p>
+
+                        <h4>Belt</h4>
+                        <p>When you are a more
+                        advanced lifter it is greatly recommended to start using a belt. The primary
+                        goal of wearing a belt during lifts is to increase abdominal pressure. This
+                        increased abdominal pressure improves your stability and also reduces tension
+                        in the lower back, and there for prevents injuries. For absolute beginners it’s
+                        not recommended to use a belt, since most beginners are unable to brace their
+                        core correctly anyway. Also for an absolute beginner the belt is just another
+                        thing to focus on, while they should just be focusing on the lift. In training
+                        a belt generally gets used when training at 70% of your 1RM or higher, because
+                        of safety and maintaining a good neutral spine. The positioning of the belt is usually around the belly button for the squat, but again this
+                        is very dependent on preference. In the deadlift the belt is wore a little bit
+                        higher, around the height of your first rib. George Leeman, Stan Efferding and Eric Lillibridge
+                        are examples of powerlifters who wear their belt very high. Also check out the IJzersterk Facebook post referring to an article written by
+                        Greg Knuckels for more reasons why you should be
+                        wearing a belt.</p>
+                        <p>The two most common belts
+                        have thicknesses of 10 mm and 13 mm. The 13 mm will be stiffer and provides a
+                        little bit more support than the 10 mm, but as a drawback is a bit harder to
+                        put on and might be too stiff for some. This choice is very personal.</p>
+
+                        <h4>Sleeves</h4>
+                        <p>Sleeves are long cylinders
+                        of neoprene; the main purpose of sleeves is to keep your joints healthy. When wearing elbow or knee sleeves during your lifts, your joints stay warm and compressed. Knee sleeves can also increase your squat, the
+                        tighter and more elastic your knee sleeves are the more they contribute.</p>
+                        <p>Knee sleeves are allowed in all powerlifting competitions.</p>
+
+                        <h4>Knee wraps</h4>
+                        <p>Knee wraps are more advanced pieces of equipment. Knee wraps
+                        are used when squatting heavy weights and they can contribute a lot to your
+                        squat. By stretching them out while sitting into them elastic energy is stored
+                        in the wraps, this gives you more power from the bottom of the squat and gives
+                        you the ability to lift more weight and also increases your speed. Regarding
+                        the safety of knee wraps, knee wraps add extra support to your knees, so if you
+                        have weak knee tendons or a torn ACL it is still perfectly safe to wear knee
+                        wraps. However the knee wraps give a lot of friction on your skin, so you may
+                        get sore and red skin the first couple of times of wearing them.</p>
+
+                        <h4>Wrist wraps</h4>
+                        <p>Wrist wraps are the best
+                        way to support your wrists during lifting. The wraps prevent your wrists from
+                        overextending. The wrist wraps provide compression on your wrists so you don’t
+                        have to strain your wrists as much. In the bench press it helps you to keep the
+                        bar straight over your elbow. In the squat it helps get your arms in a good and
+                        tight position without the weight of the bar causing your wrists to rotate and
+                        get injured. </p>
+
+                        <h4>Slingshot</h4>
+                        <p>The slingshot is a relative new piece of lifting equipment,
+                        marketed by Mark Bell. The slingshot allows you to handle heavier weights and
+                        more volume, thus they are perfect for ‘overloading’ in training. Another
+                        benefit of the slingshot is that it forces you to tuck your elbows in the
+                        eccentric part of the bench press, therefore teaching you to sink into your lats. A Slingshot is pretty expensive, it costs around €90
+                        to get one in the Netherlands.</p>
+
+                        <h4>Boards</h4>
+                        <p>Boards are used to train
+                        partial ranges of the bench press. They are made from wood, and are easy to
+                        fabricate yourself. You can
+                        vary the thickness of the board, standard thicknesses are 1,2,3 or 4 inch. Using
+                        the board you can really specifically train partial pathways.</p>
+
+                        <h4>Bands &amp; chains</h4>
+                        <p>These pieces of equipment
+                        are used for accommodating resistance. Bands and chains make the weights
+                        heavier at the top of the lift. By accelerating into the bands and chains you
+                        will develop a stronger lockout. It is also safer for the joints when doing speed
+                        reps. </p>
+                        <p>It is also possible to use
+                        the bands reversed, so you hang the barbell in the bands that are attached in
+                        the squat rack. This way you can handle more weight and use them as an
+                        overloading method.</p>
+
+                        <h4>Chalk</h4>
+                        <p>In the TU gym, chalk is
+                        freely available. Chalk helps you to get a better grip of the bar, it also keeps your hands dry if you are sweating.</p>
+
+                        <h4>Shoes</h4>
+                        <p>If you want to step your powerlifting game up, think about
+                        buying weightlifting shoes. Weightlifting shoes have great properties for
+                        lifting, in particular the squat. Weightlifting shoes have very hard material
+                        flat soles, which give you a stable base to squat on. The elevation in the heal of the shoe decreases your required knee angle and
+                        ankle dorsi flexion mobility to reach proper depth.
+                        For deadlifts it is recommended to wear flat thin soles, like all stars. You
+                        can decide to wear weightlifting shoes during deadlifts, since they are so
+                        stable. However, because of the high heel they make the liftoff a little bit
+                        harder.</p>
+                        <table className="table table-striped">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td>Allowed in raw powerlifting</td>
+                                    <td>Allowed in geared lifting</td>
+                                    <td>Price [€]</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Straps</td><td>no</td><td>no</td><td>8-20</td></tr>
+                                <tr><td>Belt</td><td>yes</td><td>yes</td><td>60-130</td></tr>
+                                <tr><td>Knee sleeves</td><td>yes</td><td>yes</td><td>30-50</td></tr>
+                                <tr><td>Elbow sleeves</td><td>no</td><td>no</td><td>15-30</td></tr>
+                                <tr><td>Knee wraps</td><td>no</td><td>yes</td><td>40-70</td></tr>
+                                <tr><td>Wrist wraps</td><td>yes</td><td>yes</td><td>10-40</td></tr>
+                                <tr><td>Slingshot</td><td>no</td><td>no</td><td>80-110</td></tr>
+                                <tr><td>Bands</td><td>no</td><td>no</td><td>10-15</td></tr>
+                                <tr><td>Chains</td><td>no</td><td>no</td><td>40-80</td></tr>
+                                <tr><td>Chalk</td><td>yes</td><td>yes</td><td>5-10</td></tr>
+                                <tr><td>Weightlifting shoes</td><td>yes</td><td>yes</td><td>70-200</td></tr>
+                            </tbody>
+                        </table>
+
+                </div>
                 <div id="blog-programming" className="article">
                     <h1>Programming</h1>
                     <div className="date">October 16, 2015 | <span className="name">Daniël Schooneveld</span> | 10 min read</div>
