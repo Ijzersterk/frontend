@@ -20,6 +20,11 @@ default React.createClass({
                 <h4>Blogs</h4>
                 <ul>
                     <li>
+                        <Link to="/blogs#blog-gear">
+                            Lifting gear - by Auke Piers
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/blogs#blog-programming">
                             Programming - by Daniël Schooneveld
                         </Link>
@@ -27,11 +32,6 @@ default React.createClass({
                     <li>
                         <Link to="/blogs#first-meet-joey">
                             My first powerlifting meet - by Joey
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/blogs#ego-lifting">
-                            Ego lifting - The good, the bad and the ugly
                         </Link>
                     </li>
                 </ul>
