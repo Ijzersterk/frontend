@@ -10,7 +10,6 @@ import Home from './views/Home.jsx';
 import Blogs from './views/Blogs.jsx';
 import Newmember from './views/Newmember.jsx';
 import About from './views/About.jsx';
-import Login from './components/Login.jsx';
 import Gym from './views/Gym.jsx';
 
 var {
@@ -43,7 +42,6 @@ var routes = (
         <Route name="gym" handler={Gym}/>
         <Route name="newmember" handler={Newmember}/>
         <Route name="about" handler={About}/>
-        <Route name="admin" handler={Login}/>
     </Route>
 );
 
