@@ -52,7 +52,7 @@ var zip = require('gulp-zip');
 
 var reload = browserSync.reload;
 var config = {
-    jsx: './scripts/app.jsx',
+    js: './scripts/app.js',
     less: 'styles/*.less',
     mainLess: 'styles/main.less',
     bundle: 'app.js',
@@ -83,7 +83,7 @@ gulp.task('browserSync', function() {
 // Sets up the task watchify,
 // which configurates which files to watch and what to do when a file has changed.
 gulp.task('watchify', function() {
-    var bundler = watchify(browserify(config.jsx, watchify.args));
+    var bundler = watchify(browserify(config.js, watchify.args));
 
     function rebundle() {
         return bundler
@@ -103,7 +103,7 @@ gulp.task('watchify', function() {
 
 // Tells browserify how to bundle all the files
 gulp.task('browserify', function() {
-    return browserify(config.jsx)
+    return browserify(config.js)
         .transform(babelify)
         .bundle()
         .pipe(source(config.bundle))
@@ -149,7 +149,7 @@ gulp.task('image', function() {
 
 // Lint is used for detecting correct syntax and style
 gulp.task('lint', function() {
-    return gulp.src('scripts/**/*.jsx')
+    return gulp.src('scripts/**/*.js')
         .pipe(eslint())
         .pipe(eslint.format());
 });
@@ -166,11 +166,11 @@ gulp.task('zip', function(){
 gulp.task('watchTask', function() {
     gulp.watch('index.html', ['html-copy']);
     gulp.watch(config.less, ['styles']);
-    gulp.watch('scripts/**/*.jsx', ['lint']);
+    gulp.watch('scripts/**/*.js', ['lint']);
 });
 
 // The watch task.
-// Copies the html/img files, watches for changes and sets up the automatic building of jsx files
+// Copies the html/img files, watches for changes and sets up the automatic building of js files
 gulp.task('watch', ['clean'], function() {
     gulp.start(['browserSync', 'watchTask', 'watchify', 'html-copy', 'styles', 'lint', 'image', 'fonts']);
 });
