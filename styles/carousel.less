@@ -1,28 +1,14 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.15/slick.css);
-
-.slick-prev{
-    left: -45px;
+.carousel-control {
+    &.right, &.left{
+        background-image: none;
+        color: @red;
+    }
+    &.right:hover, &.left:hover{
+        color: black;
+    }
 }
 
-.slick-next{
-    right: -45px;
-}
-
-.slick-prev, .slick-next{
-    width: 45px;
-    height: 45px;
-}
-
-.slick-prev::before, .slick-next::before{
-    color: black;
-    font-size: 45px;
-}
-
-.slick-slide {
-    // Kind of hack, for some reason the adaptive height of react-slick does not work properly
-    // It will only change the height on a mouse click anywhere in the container of where react-slick
-    // is initialized.
-    min-height: 400px;
+.carousel {
     img{
         margin: 0 auto;
         max-width: 100%;
