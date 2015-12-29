@@ -147,6 +147,13 @@ gulp.task('view-copy', function() {
             stream: true
         }));
 });
+gulp.task('newsletters-copy', function() {
+    return gulp.src('newsletters/*.pdf')
+        .pipe(gulp.dest('dist/newsletters'))
+        .pipe(reload({
+            stream: true
+        }));
+});
 
 // Copies all the files under img/ to the dist/img directory
 gulp.task('image', function() {
@@ -180,19 +187,19 @@ gulp.task('watchTask', function() {
 // The watch task.
 // Copies the html/img files, watches for changes and sets up the automatic building of js files
 gulp.task('watch', ['clean'], function() {
-    gulp.start(['browserSync', 'watchTask', 'watchify', 'html-copy', 'view-copy', 'styles', 'lint', 'image', 'fonts']);
+    gulp.start(['browserSync', 'watchTask', 'watchify', 'html-copy', 'view-copy', 'newsletters-copy', 'styles', 'lint', 'image', 'fonts']);
 });
 
 // Creates a dist directory which can be run indepedant
 gulp.task('build', ['clean'], function() {
     process.env.NODE_ENV = 'production';
-    gulp.start('browserify', 'styles', 'html-copy', 'view-copy', 'image', 'fonts');
+    gulp.start('browserify', 'styles', 'html-copy', 'view-copy', 'newsletters-copy', 'image', 'fonts');
 });
 
 // Creates a zip file which is deployable
 gulp.task('deploy', function(cb){
     process.env.NODE_ENV = 'production';
-    runSequence('clean', ['browserify', 'styles', 'html-copy', 'view-copy', 'image', 'fonts'], 'zip', 'clean', cb);
+    runSequence('clean', ['browserify', 'styles', 'html-copy', 'view-copy', 'newsletters-copy', 'image', 'fonts'], 'zip', 'clean', cb);
 })
 
 gulp.task('default', function() {

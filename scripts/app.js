@@ -20,8 +20,8 @@ var routes = [{
 }];
 
 var updateScrollPosition = function() {
-    window.location.hash = window.decodeURIComponent(window.location.hash);
-    const hashParts = window.location.hash.split('#');
+    var url = window.decodeURIComponent(window.location.hash);
+    const hashParts = url.split('#');
     if (hashParts.length > 2) {
         const hash = hashParts.slice(-1)[0];
         const element = document.querySelector(`#${hash}`);
@@ -31,7 +31,7 @@ var updateScrollPosition = function() {
     } else {
         window.scrollTo(0, 0);
     }
-}
+};
 
 var getUrl = function() {
     var url = window.decodeURIComponent(window.location.hash);
@@ -47,7 +47,8 @@ var onUrlChange = function() {
         default: true
     });
     $('routes').load(`views/${route.dest}`, function() {
-        updateScrollPosition();
+        // We have to wait until the dom is set before we can call it.
+        setTimeout(updateScrollPosition, 100);
     });
 };
 
