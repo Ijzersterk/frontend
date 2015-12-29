@@ -56,6 +56,7 @@ var config = {
     less: 'styles/*.less',
     mainLess: 'styles/main.less',
     bundle: 'app.js',
+    distView: 'dist/views',
     distJs: 'dist/js',
     distCss: 'dist/css',
     distFonts: 'dist/fonts',
@@ -139,6 +140,13 @@ gulp.task('html-copy', function() {
             stream: true
         }));
 });
+gulp.task('view-copy', function() {
+    return gulp.src('views/*.html')
+        .pipe(gulp.dest(config.distView))
+        .pipe(reload({
+            stream: true
+        }));
+});
 
 // Copies all the files under img/ to the dist/img directory
 gulp.task('image', function() {
@@ -164,7 +172,7 @@ gulp.task('zip', function(){
 // Defines which directories/files should be watched for changes (first argument)
 // Second argument defines which task should be run when a change occurs.
 gulp.task('watchTask', function() {
-    gulp.watch('index.html', ['html-copy']);
+    gulp.watch(['index.html', 'views/*.html'], ['html-copy','view-copy']);
     gulp.watch(config.less, ['styles']);
     gulp.watch('scripts/**/*.js', ['lint']);
 });
@@ -172,19 +180,19 @@ gulp.task('watchTask', function() {
 // The watch task.
 // Copies the html/img files, watches for changes and sets up the automatic building of js files
 gulp.task('watch', ['clean'], function() {
-    gulp.start(['browserSync', 'watchTask', 'watchify', 'html-copy', 'styles', 'lint', 'image', 'fonts']);
+    gulp.start(['browserSync', 'watchTask', 'watchify', 'html-copy', 'view-copy', 'styles', 'lint', 'image', 'fonts']);
 });
 
 // Creates a dist directory which can be run indepedant
 gulp.task('build', ['clean'], function() {
     process.env.NODE_ENV = 'production';
-    gulp.start('browserify', 'styles', 'html-copy', 'image', 'fonts');
+    gulp.start('browserify', 'styles', 'html-copy', 'view-copy', 'image', 'fonts');
 });
 
 // Creates a zip file which is deployable
 gulp.task('deploy', function(cb){
     process.env.NODE_ENV = 'production';
-    runSequence('clean', ['browserify', 'styles', 'html-copy', 'image', 'fonts'], 'zip', 'clean', cb);
+    runSequence('clean', ['browserify', 'styles', 'html-copy', 'view-copy', 'image', 'fonts'], 'zip', 'clean', cb);
 })
 
 gulp.task('default', function() {
