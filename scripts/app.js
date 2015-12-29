@@ -19,6 +19,12 @@ var routes = [{
     url: 'newmember'
 }];
 
+var updateActive = function(route){
+    $('.nav.navbar-nav > li').removeClass('active');
+    var li = $('.nav.navbar-nav a[href="#/' + route.url + '"]').parent();
+    li.addClass('active');
+};
+
 var updateScrollPosition = function() {
     var url = window.decodeURIComponent(window.location.hash);
     const hashParts = url.split('#');
@@ -46,6 +52,7 @@ var onUrlChange = function() {
     }) || _.find(routes, {
         default: true
     });
+    updateActive(route);
     $('routes').load(`views/${route.dest}`, function() {
         // We have to wait until the dom is set before we can call it.
         setTimeout(updateScrollPosition, 100);
