@@ -17,6 +17,9 @@ var routes = [{
 }, {
     dest: 'Newmember.html',
     url: 'newmember'
+}, {
+    dest: 'Board.html',
+    url: 'board'
 }];
 
 var updateActive = function(route){

@@ -35,7 +35,9 @@ img{
 
 .sidebar {
 	font-size: 15px;
-	margin-top: 95px;
+    @media(min-width:@screen-md-min){
+        margin-top: 95px;
+    }
 	h4{
 		color: white;
 		background-color: #B82605;
@@ -91,4 +93,10 @@ img{
 .grey-bg{
     background-color:#D8D8D8;
     padding: 10px;
+}
+
+#board {
+    & > img {
+        width: 100%;
+    }
 }
