@@ -1,5 +1,7 @@
 import $ from 'jquery';
 import _ from 'lodash';
+import bootstrap from 'bootstrap';
+import renderEvents from './events.js';
 
 var routes = [{
     dest: 'Intro.html',
@@ -20,13 +22,25 @@ var routes = [{
 }, {
     dest: 'Board.html',
     url: 'board'
+}, {
+    dest: 'Events.html',
+    url: 'events',
+    render: renderEvents
 }];
 
-var updateActive = function(route){
+var updateActive = function(route) {
     $('.nav.navbar-nav > li').removeClass('active');
     var li = $('.nav.navbar-nav a[href="#/' + route.url + '"]').parent();
     li.addClass('active');
 };
+
+// var updateListeners = function() {
+//     $('[toggle]').click(function() {
+//         var target = $(this).attr('toggle');
+//         $(target).toggle();
+//         $(this).toggleClass('fa-chevron-down fa-chevron-up');
+//     });
+// };
 
 var updateScrollPosition = function() {
     var url = window.decodeURIComponent(window.location.hash);
@@ -56,10 +70,19 @@ var onUrlChange = function() {
         default: true
     });
     updateActive(route);
-    $('routes').load(`views/${route.dest}`, function() {
-        // We have to wait until the dom is set before we can call it.
-        setTimeout(updateScrollPosition, 100);
-    });
+
+    if (route.render) {
+        $.get(`views/${route.dest}`, function(html) {
+            $('routes').html(route.render(html));
+            setTimeout(updateScrollPosition, 100);
+            // updateListeners();
+        });
+    } else {
+        $('routes').load(`views/${route.dest}`, function() {
+            setTimeout(updateScrollPosition, 100);
+            // updateListeners();
+        });
+    }
 };
 
 onUrlChange();

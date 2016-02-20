@@ -1,0 +1,20 @@
+<div class="col-md-9 col-md-offset-1 col-xs-12" id="events">
+    {{#each this}}
+        <div class="col-md-4">
+            <div class="event-item">
+                <div class="img">
+                    {{#if link}}
+                    <a href="{{link}}">
+                        <img src="{{image}}">
+                    </a>
+                    {{^}}
+                    <img src="{{image}}">
+                    {{/if}}
+                </div>
+                <span class="title">{{title}}</span><br/>
+                <span class="date">{{timeTo}}</span><br/>
+                <span class="date">{{readableDate}}</span><br/>
+            </div>
+        </div>
+    {{/each}}
+</div>
