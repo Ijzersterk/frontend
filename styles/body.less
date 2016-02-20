@@ -12,6 +12,10 @@ img{
     margin:10px 0 20px 0;
 }
 
+.red{
+    color: @red;
+}
+
 .subheader{
     color: @header-color;
     font-size: 24px;
@@ -36,7 +40,7 @@ img{
 .sidebar {
 	font-size: 15px;
     @media(min-width:@screen-md-min){
-        margin-top: 95px;
+        margin-top: 103px;
     }
 	h4{
 		color: white;
@@ -99,4 +103,24 @@ img{
     & > img {
         width: 100%;
     }
+}
+.fa-chevron-down, .fa-chevron-up{
+    cursor: pointer;
+}
+.event-item{
+    .img{
+        height: 200px;
+    }
+    text-align: center;
+    width: 100%;
+    .title{
+        color: @red;
+        font-weight: bold;
+    }
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
+    padding: 10px;
+    img {
+        width: 100%;
+    }
+    margin-top: 15px;
 }
