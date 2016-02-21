@@ -5,7 +5,7 @@ import moment from 'moment';
 var data = [{
     image: 'https://scontent-ams3-1.xx.fbcdn.net/hphotos-xlf1/v/t1.0-9/12509125_940621742690505_3793179593775040982_n.jpg?oh=38a413dc1d3cd31bee8526a3cd4f1e48&oe=57284C60',
     title: 'SAP Cup',
-    date: '2016-12-12',
+    date: '2016-12-10',
     link: 'http://www.sapcup.eu/'
 }, {
     date: '2016-04-17',

@@ -6,12 +6,13 @@
                     {{#if link}}
                     <a href="{{link}}">
                         <img src="{{image}}">
+                        <span class="title">{{title}}</span><br/>
                     </a>
                     {{^}}
                     <img src="{{image}}">
+                    <span class="title">{{title}}</span><br/>
                     {{/if}}
                 </div>
-                <span class="title">{{title}}</span><br/>
                 <span class="date">{{timeTo}}</span><br/>
                 <span class="date">{{readableDate}}</span><br/>
             </div>
