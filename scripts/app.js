@@ -28,20 +28,19 @@ var routes = [{
     render: renderEvents
 }];
 
+/**
+ * Updates which navbar link is active
+ * @param  {Object} route The current active route
+ */
 var updateActive = function(route) {
     $('.nav.navbar-nav > li').removeClass('active');
     var li = $('.nav.navbar-nav a[href="#/' + route.url + '"]').parent();
     li.addClass('active');
 };
 
-// var updateListeners = function() {
-//     $('[toggle]').click(function() {
-//         var target = $(this).attr('toggle');
-//         $(target).toggle();
-//         $(this).toggleClass('fa-chevron-down fa-chevron-up');
-//     });
-// };
-
+/**
+ * Scrolls to the #id if present in the url
+ */
 var updateScrollPosition = function() {
     var url = window.decodeURIComponent(window.location.hash);
     const hashParts = url.split('#');
@@ -56,12 +55,20 @@ var updateScrollPosition = function() {
     }
 };
 
+/**
+ * Returns the route url
+ * @return {String}
+ */
 var getUrl = function() {
     var url = window.decodeURIComponent(window.location.hash);
     var lastIndex = url.lastIndexOf('#') || url.length;
     return (url.length > 0) ? url.substring(2, lastIndex) : '';
 };
 
+/**
+ * Calles when the window.url changes.
+ * Sets the correct route.
+ */
 var onUrlChange = function() {
     var url = getUrl();
     var route = _.find(routes, {
@@ -75,12 +82,10 @@ var onUrlChange = function() {
         $.get(`views/${route.dest}`, function(html) {
             $('routes').html(route.render(html));
             setTimeout(updateScrollPosition, 100);
-            // updateListeners();
         });
     } else {
         $('routes').load(`views/${route.dest}`, function() {
             setTimeout(updateScrollPosition, 100);
-            // updateListeners();
         });
     }
 };
