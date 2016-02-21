@@ -65,6 +65,7 @@ var timeTo = function(date) {
 var render = function(page) {
     var viewData = _(data)
         .each(function(event) {
+            event.shortDate = parseMoment(event.date).format('D MMMM');
             event.readableDate = parseMoment(event.date).format('D MMMM YYYY');
             event.timeTo = timeTo(parseMoment(event.date));
         })

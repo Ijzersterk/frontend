@@ -1,12 +1,12 @@
 import $ from 'jquery';
 import _ from 'lodash';
-import bootstrap from 'bootstrap';
 import renderEvents from './events.js';
 
 var routes = [{
     dest: 'Intro.html',
     url: 'intro',
-    default: true
+    default: true,
+    render: renderEvents
 }, {
     dest: 'Blogs.html',
     url: 'blogs'
