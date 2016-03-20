@@ -8,7 +8,7 @@ var data = [{
     date: '2016-12-10',
     link: 'http://www.sapcup.eu/'
 }, {
-    date: '2016-04-17',
+    date: '2016-04-16',
     title: 'NK RAW Junior',
     image: 'https://scontent-ams3-1.xx.fbcdn.net/hphotos-xlf1/v/t1.0-9/12509125_940621742690505_3793179593775040982_n.jpg?oh=38a413dc1d3cd31bee8526a3cd4f1e48&oe=57284C60',
     link: 'http://wimwam.nl/content/nationals-classic-powerlifting-sub-juniors'
@@ -16,7 +16,7 @@ var data = [{
     date: '2016-04-24',
     title: 'Delft\'s Strongest Student',
     image: 'img/logorood.png',
-    link: 'http://www.ijzersterkdelft.nl'
+    link: 'https://www.facebook.com/events/840996109344301/'
 }, {
     date: '2016-06-05',
     title: 'Beginner Competition',

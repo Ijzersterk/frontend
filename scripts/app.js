@@ -1,6 +1,21 @@
 import $ from 'jquery';
 import _ from 'lodash';
+import Handlebars from 'handlebars';
 import renderEvents from './events.js';
+
+/**
+ * Adds an extra helper called loop, which accepts 'from' and 'to' parameter.
+ * It loops from 'from' to 'to'.
+ */
+Handlebars.registerHelper('loop', function(context, options) {
+    var ret = '';
+    var start = options.hash.from || 0;
+    var end = Math.min(options.hash.to || context.length, context.length);
+    for (var i = start; i < end; i++) {
+        ret = ret + options.fn(context[i]);
+    }
+    return ret;
+});
 
 var routes = [{
     dest: 'Intro.html',

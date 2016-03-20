@@ -43,11 +43,11 @@
     <div class="block">
         <h4>Events</h4>
         <ul>
-            {{#each this}}
+            {{#loop this from=0 to=3}}
             <li>
                 <a href="{{link}}">{{title}} - {{shortDate}}</a>
             </li>
-            {{/each}}
+            {{/loop}}
         </ul>
     </div>
 </div>
