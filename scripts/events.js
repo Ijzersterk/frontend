@@ -8,11 +8,6 @@ var data = [{
     date: '2016-12-10',
     link: 'http://www.sapcup.eu/'
 }, {
-    date: '2016-04-16',
-    title: 'NK RAW Junior',
-    image: 'https://scontent-ams3-1.xx.fbcdn.net/hphotos-xlf1/v/t1.0-9/12509125_940621742690505_3793179593775040982_n.jpg?oh=38a413dc1d3cd31bee8526a3cd4f1e48&oe=57284C60',
-    link: 'http://wimwam.nl/content/nationals-classic-powerlifting-sub-juniors'
-}, {
     date: '2016-04-24',
     title: 'Delft\'s Strongest Student',
     image: 'img/logorood.png',
@@ -26,7 +21,12 @@ var data = [{
     date: '2016-06-12',
     title: 'DRC-Cup Open Powerlifting competition',
     image: 'https://tskvspartacus.nl/wp-content/uploads/2015/06/header-site.lossy_.png',
-    link: 'https://www.facebook.com/events/137843979928544/'
+    link: 'https://tskvspartacus.nl/en/activiteiten/drc-open-powerlifting-classic-cup-2016/'
+}, {
+    date: '2016-09-24',
+    title: 'SBD Cup',
+    image: 'http://www.sbdapparel.com/wp-content/themes/Kappe/images/logo_2.png',
+    link: 'https://www.facebook.com/events/1119062688146133/'
 }];
 
 /**
