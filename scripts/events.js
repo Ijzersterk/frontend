@@ -3,15 +3,10 @@ import _ from 'lodash';
 import moment from 'moment';
 
 var data = [{
-    image: 'https://scontent-ams3-1.xx.fbcdn.net/hphotos-xlf1/v/t1.0-9/12509125_940621742690505_3793179593775040982_n.jpg?oh=38a413dc1d3cd31bee8526a3cd4f1e48&oe=57284C60',
+    image: 'http://sapcup.eu/wp-content/themes/sapcup/images/logo.png',
     title: 'SAP Cup',
     date: '2016-12-10',
     link: 'http://www.sapcup.eu/'
-}, {
-    date: '2016-04-24',
-    title: 'Delft\'s Strongest Student',
-    image: 'img/logorood.png',
-    link: 'https://www.facebook.com/events/840996109344301/'
 }, {
     date: '2016-06-05',
     title: 'Beginner Competition',
@@ -64,6 +59,9 @@ var timeTo = function(date) {
  */
 var render = function(page) {
     var viewData = _(data)
+        .filter(function(event){
+            return moment().isBefore(parseMoment(event.date));
+        })
         .each(function(event) {
             event.shortDate = parseMoment(event.date).format('D MMMM');
             event.readableDate = parseMoment(event.date).format('D MMMM YYYY');
