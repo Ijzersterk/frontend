@@ -1,28 +1,7 @@
 import Handlebars from 'handlebars';
 import _ from 'lodash';
 import moment from 'moment';
-
-var data = [{
-    image: 'http://sapcup.eu/wp-content/themes/sapcup/images/logo.png',
-    title: 'SAP Cup',
-    date: '2016-12-10',
-    link: 'http://www.sapcup.eu/'
-}, {
-    date: '2016-06-05',
-    title: 'Beginner Competition',
-    image: 'http://sportcentrumtopfit.nl/wp-content/uploads/2015/03/1795661_123637204497455_752408052_n.jpg',
-    link: 'https://www.facebook.com/events/1227442820604545/'
-}, {
-    date: '2016-06-12',
-    title: 'DRC-Cup Open Powerlifting competition',
-    image: 'https://tskvspartacus.nl/wp-content/uploads/2015/06/header-site.lossy_.png',
-    link: 'https://tskvspartacus.nl/en/activiteiten/drc-open-powerlifting-classic-cup-2016/'
-}, {
-    date: '2016-09-24',
-    title: 'SBD Cup',
-    image: 'http://www.sbdapparel.com/wp-content/themes/Kappe/images/logo_2.png',
-    link: 'https://www.facebook.com/events/1119062688146133/'
-}];
+import request from 'superagent';
 
 /**
  * Specify the format so the date is correctly parsed.
@@ -55,23 +34,34 @@ var timeTo = function(date) {
 /**
  * Renders the page with the events
  * @param  {DOMHTML} page The HTML events.html page.
- * @return {DOMHTML}      A rendered page.
+ * @return {Promise}      Where the success returns the html page which was rendered.
  */
 var render = function(page) {
-    var viewData = _(data)
-        .filter(function(event){
-            return moment().isBefore(parseMoment(event.date));
-        })
-        .each(function(event) {
-            event.shortDate = parseMoment(event.date).format('D MMMM');
-            event.readableDate = parseMoment(event.date).format('D MMMM YYYY');
-            event.timeTo = timeTo(parseMoment(event.date));
-        })
-        .sortBy(function(event) {
-            return parseMoment(event.date).unix();
-        })
-        .value();
-    return Handlebars.compile(page)(viewData);
+    return new Promise(function(resolve, reject) {
+        request
+            .get('data/competitions.json')
+            .end(function(err, res) {
+                if(err){
+                    console.warn(`${err} ${res.status}`);
+                    resolve("Error occured retrieving the competition data.");
+                }
+                const data = res.body;
+                var viewData = _(data)
+                    .filter(function(event) {
+                        return moment().isBefore(parseMoment(event.date));
+                    })
+                    .each(function(event) {
+                        event.shortDate = parseMoment(event.date).format('D MMMM');
+                        event.readableDate = parseMoment(event.date).format('D MMMM YYYY');
+                        event.timeTo = timeTo(parseMoment(event.date));
+                    })
+                    .sortBy(function(event) {
+                        return parseMoment(event.date).unix();
+                    })
+                    .value();
+                resolve(Handlebars.compile(page)(viewData));
+            });
+    });
 };
 
 export

@@ -95,8 +95,12 @@ var onUrlChange = function() {
 
     if (route.render) {
         $.get(`views/${route.dest}`, function(html) {
-            $('routes').html(route.render(html));
-            setTimeout(updateScrollPosition, 100);
+            route.render(html).then(function(result) {
+                $('routes').html(result);
+                setTimeout(updateScrollPosition, 100);
+            }, function(err){
+                console.error(err);
+            });
         });
     } else {
         $('routes').load(`views/${route.dest}`, function() {
