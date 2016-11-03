@@ -3,15 +3,34 @@
     bottom: 0;
     width: 100%;
 	padding:10px;
-	min-height: 110px;
+	min-height: 80px;
 	color: #DDDDDD;
 	background-color: black;
 	border-top: 5px solid #E7A223;
+    display: flex;
+    justify-content: center;
     a, a:visited{
         color: white;
     }
     img{
         height: 30px;
         margin: 0;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-line {
+        display:flex;
+        justify-content:space-between;
+        width:500px;
+        margin-bottom: 5px;
+    }
+    .icon-line {
+        display:flex;
+        justify-content: center;
+        & > a {
+            margin-right: 5px;
+        }
     }
 }

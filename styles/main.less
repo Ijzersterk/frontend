@@ -12,12 +12,13 @@ html{
 }
 
 body{
-    margin-bottom: 120px;
+    margin-bottom: 90px;
 }
 
 h1,h2,h3,h4{
 	color: @header-color;
 }
+
 
 h1{
 	font-weight: 700;
@@ -46,5 +47,10 @@ thead > tr > td {
 @media (max-width: @screen-sm-max){
     .non-mobile-float{
         float:none !important;
+    }
+}
+@media (min-width: @screen-sm-max) {
+    .mobile-container {
+        .container;
     }
 }
