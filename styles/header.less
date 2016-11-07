@@ -47,7 +47,7 @@
         a {
             background-color: black;
         }
-        .dropdown-menu{
+        & > .dropdown-menu{
             display: block;
         }
     }
@@ -79,5 +79,12 @@
     text-decoration: underline;
     &:hover{
         color: @red;
+    }
+}
+@media (min-width: 767px) {
+    .caret-right {
+        border-top: 4px solid rgba(0, 0, 0, 0);
+        border-bottom: 4px solid rgba(0, 0, 0, 0);
+        border-left: 4px solid white;
     }
 }

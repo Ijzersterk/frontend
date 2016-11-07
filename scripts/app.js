@@ -3,6 +3,25 @@ import _ from 'lodash';
 import Handlebars from 'handlebars';
 import renderEvents from './events.js';
 
+$(document).ready(function() {
+    $('.navbar a.dropdown-toggle').on('click', function(e) {
+        var elmnt = $(this).parent().parent();
+        if (!elmnt.hasClass('nav')) {
+            var li = $(this).parent();
+            var heightParent = parseInt(elmnt.css('height').replace('px', '')) / 2;
+            var widthParent = parseInt(elmnt.css('width').replace('px', '')) - 10;
+
+            if(!li.hasClass('open')) li.addClass('open')
+            else li.removeClass('open');
+            $(this).next().css('top', heightParent + 'px');
+            $(this).next().css('left', widthParent + 'px');
+
+            return false;
+        }
+    });
+});
+
+
 /**
  * Adds an extra helper called loop, which accepts 'from' and 'to' parameter.
  * It loops from 'from' to 'to'.
