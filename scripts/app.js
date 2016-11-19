@@ -54,9 +54,15 @@ var routes = [{
     dest: 'Newmember.html',
     url: 'newmember'
 }, {
-    dest: 'Board.html',
-    url: 'board'
-}, {
+    dest: 'Board_2014-2015.html',
+    url: 'board_2014-2015'
+},{
+    dest: 'Board_2015-2016.html',
+    url: 'board_2015-2016'
+},{
+    dest: 'Board_2016-2017.html',
+    url: 'board_2016-2017'
+},{
     dest: 'Events.html',
     url: 'events',
     render: renderEvents
