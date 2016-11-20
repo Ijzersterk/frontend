@@ -17,38 +17,15 @@
   "bugs": {
     "url": "https://github.com/Ijzersterk/frontend/issues"
   },
-  "homepage": "http://www.ijzersterkdelft.nl",
-  "dependencies": {
-    "autoprefixer-core": "^5.2.1",
-    "babel": "^5.5.8",
-    "babel-eslint": "^3.1.15",
-    "babelify": "^6.1.2",
-    "bootstrap": "^3.3.5",
-    "browser-sync": "^2.7.11",
-    "browserify": "^10.2.4",
-    "del": "^1.2.0",
-    "eslint": "^0.23.0",
-    "gulp": "^3.9.0",
-    "gulp-changed": "^1.2.1",
-    "gulp-csso": "^1.0.0",
-    "gulp-eslint": "^0.14.0",
-    "gulp-image": "^1.0.1",
-    "gulp-less": "^3.0.3",
-    "gulp-notify": "^2.2.0",
-    "gulp-postcss": "^5.1.9",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0",
-    "handlebars": "^4.0.5",
-    "jquery": "^2.1.4",
-    "lodash": "^3.10.0",
-    "moment": "^2.11.2",
-    "superagent": "^2.0.0",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.2.2"
+  "scripts": {
+    "less": "less-watch-compiler styles styles main.less",
+    "zip": "zip -r dist-${npm_package_version}.zip scripts index.html views newsletters img styles/main.css"
   },
+  "homepage": "http://www.ijzersterkdelft.nl",
+  "dependencies": {},
   "devDependencies": {
-    "gulp-zip": "^3.0.2",
-    "run-sequence": "^1.1.2"
+    "bootstrap": "^3.3.7",
+    "less": "^2.7.1",
+    "less-watch-compiler": "^1.2.3"
   }
 }

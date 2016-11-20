@@ -1,8 +1,3 @@
-import Handlebars from 'handlebars';
-import _ from 'lodash';
-import moment from 'moment';
-import request from 'superagent';
-
 /**
  * Specify the format so the date is correctly parsed.
  * When using moment, this functions must be used to parse the dates in the events correctly.
@@ -36,33 +31,23 @@ var timeTo = function(date) {
  * @param  {DOMHTML} page The HTML events.html page.
  * @return {Promise}      Where the success returns the html page which was rendered.
  */
-var render = function(page) {
+var renderEvents = function(page) {
     return new Promise(function(resolve, reject) {
-        request
-            .get('data/competitions.json')
-            .end(function(err, res) {
-                if(err){
-                    console.warn(`${err} ${res.status}`);
-                    resolve("Error occured retrieving the competition data.");
-                }
-                const data = res.body;
-                var viewData = _(data)
-                    .filter(function(event) {
-                        return moment().isBefore(parseMoment(event.date));
-                    })
-                    .each(function(event) {
-                        event.shortDate = parseMoment(event.date).format('D MMMM');
-                        event.readableDate = parseMoment(event.date).format('D MMMM YYYY');
-                        event.timeTo = timeTo(parseMoment(event.date));
-                    })
-                    .sortBy(function(event) {
-                        return parseMoment(event.date).unix();
-                    })
-                    .value();
-                resolve(Handlebars.compile(page)(viewData));
-            });
+        $.get('data/competitions.json', function(data){
+            var viewData = _(data)
+                .filter(function(event) {
+                    return moment().isBefore(parseMoment(event.date));
+                })
+                .each(function(event) {
+                    event.shortDate = parseMoment(event.date).format('D MMMM');
+                    event.readableDate = parseMoment(event.date).format('D MMMM YYYY');
+                    event.timeTo = timeTo(parseMoment(event.date));
+                })
+                .sortBy(function(event) {
+                    return parseMoment(event.date).unix();
+                })
+                .value();
+            resolve(Handlebars.compile(page)(viewData));
+        });
     });
 };
-
-export
-default render;

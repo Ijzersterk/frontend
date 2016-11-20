@@ -1,8 +1,3 @@
-import $ from 'jquery';
-import _ from 'lodash';
-import Handlebars from 'handlebars';
-import renderEvents from './events.js';
-
 $(document).ready(function() {
     $('.navbar a.dropdown-toggle').on('click', function(e) {
         var elmnt = $(this).parent().parent();
