@@ -19,12 +19,14 @@
   },
   "scripts": {
     "less": "less-watch-compiler styles styles main.less",
-    "zip": "zip -r dist-${npm_package_version}.zip scripts index.html views newsletters img styles/main.css"
+    "zip": "zip -r dist-${npm_package_version}.zip scripts index.html views newsletters img styles/main.css",
+    "server": "browser-sync start --server --files \".\""
   },
   "homepage": "http://www.ijzersterkdelft.nl",
   "dependencies": {},
   "devDependencies": {
     "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.2",
     "less": "^2.7.1",
     "less-watch-compiler": "^1.2.3"
   }
